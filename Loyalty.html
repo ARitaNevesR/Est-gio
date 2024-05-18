@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LKM</title>
+    <link rel="stylesheet" href="css/Loyalty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="/js/menu.js" defer></script>
+</head>
+<body>
+    <header class="navbar-container" id="navbar-container">
+        <a href="index.html#home" class="home"><img src="/images/logotipoLKM-White.png" class= "logo" alt="logo"></a>
+        <nav class="navbar" id="nav-one">
+            <a href="/index.html#home" class="effect">Home</a>
+            <a href="/index.html#sobre" class="effect">Sobre Nós</a>
+  
+            <div class="dropdown">
+                <a href="/index.html#solucoes" class="effect-white">Soluções <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="/AppsMedida.html">Apps à Medida</a>
+                  <a href="/SiteDePedidos.html">Site de Pedidos</a>
+                  <a href="/InterfaceDosKiosks.html">Interface dos Kiosks</a>
+                  <a href="/Loyalty.html">Loyalty</a>
+                  <a href="/VouchersDesafios.html">Vouchers & Desafios</a>
+                  <a href="/BookingAll.html">Booking All</a>
+                </div>
+            </div> 
+            
+            <a href="/index.html#projetos" class="effect">Projetos</a>
+            <a href="/index.html#contactos" class="effect">Contactos</a>
+        </nav>
+  
+        <nav class="navbar-small">
+          <button onclick="openNavbar()" class="icon-small"><i class="fa-solid fa-bars" style="color: white;"></i></button>
+          <div id="navbar-small-content" class="navbar-small-content">
+            <a href="/index.html#home" class="effect">Home</a>
+            <a href="/index.html#sobre" class="effect">Sobre Nós</a>
+  
+            <button href="#" id="dropdown2" onclick="openSubNavbar()" >Soluções</button>
+              <div class="sub-navbar-small-content" id="sub-navbar-small-content">
+                <a href="/AppsMedida.html">Apps à Medida</a>
+                <a href="/SiteDePedidos.html">Site de Pedidos</a>
+                <a href="/InterfaceDosKiosks.html">Interface dos Kiosks</a>
+                <a href="/Loyalty.html">Loyalty</a>
+                <a href="/VouchersDesafios.html">Vouchers & Desafios</a>
+                <a href="/BookingAll.html">Booking All</a>
+              </div>
+  
+            <a href="/index.html#projetos" class="effect">Projetos</a>
+            <a href="/index.html#contactos" class="effect">Contactos</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="home-screen">
+        <h1>LOYALTY</h1>
+        <img class="home-image" src="/images/Home/loyalty.jpg">
+    </div>
+
+    <div class="line">
+        <div class="line-content">
+            <p>VOUCHERS & DESAFIOS</p>
+            <img src="/images/bullet-point-blue.png">
+            <p>VOUCHERS & DESAFIOS</p>
+            <img src="/images/bullet-point-blue.png">
+            <p>VOUCHERS & DESAFIOS</p>
+            <img src="/images/bullet-point-blue.png">
+            <p>VOUCHERS & DESAFIOS</p>
+        </div>
+    </div>
+
+    <div class="bonif-container">
+        <div class="bonif">
+            <div class="title-container">
+                <h1>BONIFICAÇÃO</h1>
+                <div class="title-shadow"></div>
+            </div>
+            <div class="information">
+                <div class="bonif-text">
+                    <p>O MyClient permite criar programas de fidelização com esquemas de:</p>
+                    <br>
+                    <ul>
+                        <li class="li-bonif">Bonificação com Pontos;</li>
+                        <li class="li-bonif">Descontos Imediatos;</li>
+                        <li class="li-bonif">Vales de Desconto;</li>
+                        <li class="li-bonif">Cartões Empresa <i>(pré-pagos ou pós-pagos);</i></li>
+                        <li class="li-bonif">Campanhas Programadas;</li>
+                        <li class="li-bonif">Jogos de Prémios.</li>
+                    </ul>
+                </div>
+                <div class="bonif-image">
+                    <img src="images/Home/pc.png" class="bonif-image-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vantagens-container">
+        <div class="vantagens">
+            <div class="vantagem blue top vant-top">
+                <img class="icon" src="images/Icons/Online.png">
+                <h1>Online</h1>
+                <br>
+                <div class="icon-text">
+                    <p>Programa de fidelização com reporting online, recuperação e identificação de clientes, cross selling e push integrado para impulsionar vendas.</p>
+                </div>
+            </div>
+
+            <div class="vantagem white top">
+                <img class="icon icon-blue" src="images/Icons/Cartoes-Blue.png">
+                <img class="icon icon-white" src="images/Icons/Cartoes-White.png">
+                <h1>Cartões</h1>
+                <br>
+                <div class="icon-text">
+                    <p>Variedade de cartões para diferentes necessidades: físicos e virtuais, com banda magnética, chip, QR Code, NFC, além de identificação via app.</p>
+                </div>
+            </div>
+
+            <div class="vantagem blue top">
+                <img class="icon" src="images/Icons/Email.png">
+                <h1>Emails & SMS</h1>
+                <br>
+                <div class="icon-text">
+                    <p>Personalize e envie e-mails, SMS e notificações push segmentadas para clientes fidelizados, destacando novos produtos, ofertas, eventos e aniversários.</p>
+                </div>
+            </div>
+
+            <div class="vantagem white bottom">
+                <img class="icon icon-blue" src="images/Icons/Comunicacao-Blue.png">
+                <img class="icon icon-white" src="images/Icons/Comunicacao-White.png">
+                <h1>Comunicação</h1>
+                <br>
+                <div class="icon-text">
+                    <p>Campanhas mobile focadas em clientes fidelizados, com Push notification, Georeferenciação e segmentação para maior eficácia.</p>
+                </div>
+            </div>
+            
+            <div class="vantagem blue bottom">
+                <img class="icon" src="images/Icons/Relatorios.png">
+                <h1>Relatórios</h1>
+                <br>
+                <div class="icon-text">
+                    <p>Análise de relatórios online/offline, cruzamento de dados para estratégia sustentada. Variáveis ajustáveis conforme necessidades específicas.</p>
+                </div>
+            </div>
+
+            <div class="vantagem white bottom vant-bottom">
+                <img class="icon icon-blue" src="images/Icons/Parcerias-Blue.png">
+                <img class="icon icon-white" src="images/Icons/Parcerias-White.png">
+                <h1>Parcerias</h1>
+                <br>
+                <div class="icon-text">
+                    <p>A plataforma integra diversos parceiros de destaque, com validação eletrónica e registo de movimentos através de cartão.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer id="contactos">
+        <div class="footer-container">
+            <div class="footer f1">
+                <h1>LKM</h1>
+                <p>Rua das Marinhas do Tejo, nº121</p>
+                <p>2690-370 Santa Iria de Azóia</p>
+                <br><br><br>
+                <p><b>Telm:</b> +351 963 239 239</p>
+                <br>
+                <p><b>Email:</b> geral.lkm@grupopie.com</p>
+            </div>
+
+            <div class="footer f2">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <a href="index.html#home"><li>Home</li></a>
+                    <a href="index.html#clientes"><li>Clientes</li></a>
+                    <a href="index.html#sobre"><li>Sobre Nós</li></a>
+                    <a href="index.html#solucoes"><li>Produtos</li></a>
+                    <a href="index.html#portfolio"><li>Portfólio</li></a>
+                </ul>
+            </div>
+
+            <div class="footer f3">
+                <h3>As nossas soluções</h3>
+                <ul>
+                    <a href="/AppsMedida.html"><li>Apps à medida</li></a>
+                    <a href="/Loyalty.html"><li>Loyalty</li></a>
+                    <a href="/VouchersDesafios.html"><li>Vouchers & Desafios</li></a>
+                    <a href="/SiteDePedidos.html"><li>Site de Pedidos</li></a>
+                    <a href="/InterfaceDosKiosks.html"><li>Interface dos Kiosks de Pedidos</li></a>
+                    <a href="/BookingAll.html"><li>Booking All</li></a>
+                </ul>
+            </div>
+
+            <div class="footer f4">
+                <a href="#" class="fa-brands fa-facebook" style="color: white; border-radius: 50%; text-decoration: none; font-size: 40px;"></a>
+                <br>
+                <a href="#" class="fa-brands fa-linkedin" style="color: white; border-radius: 50%; text-decoration: none; font-size: 40px;"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>

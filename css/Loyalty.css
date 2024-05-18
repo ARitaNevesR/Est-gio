@@ -1,0 +1,1198 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', serif;
+}
+
+p {
+    color: #444444;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px 0 200px;
+    background: linear-gradient(to bottom, black, transparent)    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.home {
+    z-index: 110;
+}
+
+.navbar-small{
+    display: none;
+}
+
+
+.navbar {
+    padding-right: 20%;
+}
+
+.logo{
+    width: 137px;
+    height: auto;
+    padding: 15px;
+    transition: .3s;
+}
+
+.logo:hover{
+    content: url(../images/logotipoLKM-Blue.png);
+}
+
+.navbar a, .dropdown {
+    position: relative;
+    font-size:calc(12px + 0.5vw);
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.navbar a{
+    margin-left: 40px;
+}
+
+.dropdown {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.navbar .effect{
+    color: white;
+}
+
+.navbar .effect-white{
+    color: white;
+}
+
+.navbar .effect::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #008AAB;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: #008AAB;
+}
+
+.navbar .effect:hover::before{
+    width: 100%;
+}
+
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 40px;
+    background-color: rgba(0, 138, 171, 0.8);
+    min-width: 300px;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+  
+.dropdown-content a {
+    float: none;
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 0 10px 10px 10px;
+    opacity: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+
+/* --------------------------- HOME ---------------------------*/
+
+.home-screen{
+    width: 100%;
+    height: 428px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: brightness(50%);
+}
+
+.home-screen h1{
+    position: absolute;
+    padding: 0 0 0 10%;
+    font-size:calc(40px + 0.5vw);
+    color: white;
+    z-index: 2;
+}
+
+.line {
+    max-width: 1920px;
+    height: auto;
+    background-color: #008AAB;
+    padding: 25px 100px 25px 100px;
+}
+
+.line-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line-content p{
+    color: #51B8C3;
+    font-weight: 700;
+}
+
+
+/* --------------------------- bonificação ---------------------------*/
+
+.bonif-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bonif{
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 100px 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.title-container h1{
+    z-index: 1;
+    font-size:calc(40px + 0.5vw);
+    padding: 0 0 0 10px;
+    color: #18737D  ;
+    position: absolute;
+}
+
+.title-shadow{
+    z-index: 0;
+    top: 80%;
+    background-color: #51B8C3;
+    height: 15px;
+    width: 500px;
+    position: absolute;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonif-text{
+    padding: 50px;
+    width: 50%;
+}
+
+.bonif-text p{
+    font-size:calc(12px + 0.5vw);
+    color: #333333;
+}
+
+.bonif-text li{
+    font-size:calc(12px + 0.5vw);
+    color: #333333;
+}
+
+
+.bonif-text ul{
+    padding: 0 0 0 40px;
+}
+
+.li-bonif {
+    font-size:calc(12px + 0.5vw);
+    padding: 10px;
+    color: #444444;
+}
+
+.li-bonif::marker{
+    content: url(../images/bullet-point.png);
+}
+
+.bonif-image{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonif-image-img{
+    width: 90%;
+    height: auto;
+}
+
+/* --------------------------- Vantagem ---------------------------*/
+
+.vantagens-container{
+    width: 100%;
+    height: auto;
+    padding: 0 0 150px 0;
+}
+
+.vantagens{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vantagem{
+    width: 31%;
+    height: 200px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6% 1% 6% 1%;
+}
+
+.vantagem h1{
+    font-size:calc(9px + 0.5vw);
+    font-weight: 700;
+}
+
+.icon-white {
+    display: none;
+}
+
+.blue {
+    background-color: #008AAB;
+    color: white;
+}
+
+.blue p{
+    background-color: #008AAB;
+    color: white;
+}
+
+.white {
+    color: #008AAB;
+}
+
+.icon {
+    width: 12%;
+    height: 30%;
+}
+
+.top {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.bottom{
+    border-radius: 0px 0px 20px 20px;
+}
+
+.icon-text{
+    width: 45%;
+    height: 50%;
+    font-size:calc(6px + 0.5vw);
+    text-align: center;
+}
+
+/* --------------------------- Footer ---------------------------*/
+
+footer{
+    position: absolute;
+    margin-top: -40px;
+    height: 578px;
+    width: 100%;
+    background-color: #0699AA;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    z-index: 99;
+}
+
+.footer-container{
+    width: 70%;
+    height: auto;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f1{
+    width: 25%;
+}
+.f2{
+    width: 15%;
+}
+.f3{
+    width: 25%;
+}
+.f4{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h1{
+    font-size:calc(40px + 0.5vw);
+    color: white;
+}
+
+.f1 p{
+    color: white;
+    font-size:calc(12px + 0.5vw);
+}
+
+footer li, ul{
+    padding: 10px;
+    color: white;
+}
+
+footer h3{
+    font-size:calc(16px + 0.5vw);
+    color: white;
+}
+
+footer li{
+    cursor: pointer;
+    font-size:calc(12px + 0.5vw);
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer li::marker {
+    content: "\203A"; 
+
+}
+
+footer li:hover{
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 20px 0 20px;
+        background: linear-gradient(to bottom, black, transparent)    ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    
+    .navbar {
+        padding-right: 0;
+        display: none;
+    }
+    
+    .logo{
+        width: 15%;
+        height: auto;
+        padding: 30px 60px;
+        transition: .3s;
+    }
+    .navbar-small {
+      display: block;
+      padding-right: 10%;
+      position: relative;
+      display: inline-block;
+  }
+  
+  .navbar-small-content{
+    display: none;
+    position: fixed;
+    top: 9%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 138, 171, 1);
+    z-index: 1;
+  }
+  
+  .navbar-small-content a, button {
+    color: white;
+    padding: 16px 50px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+  }
+  
+  .navbar-small-content button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .sub-navbar-small-content{
+    display: none;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 106, 133);
+    z-index: 1;
+  }
+  
+  .sub-navbar-small-content a{
+      padding: 16px 70px;
+      font-weight: 500;
+  }
+  
+  .icon-small {
+    font-size:calc(25px + 0.5vw);
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+  }
+
+    /* --------------------------- HOME ---------------------------*/
+
+    .home-screen{
+        width: 100%;
+        height: 300px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-color: #444444;
+    }
+
+    .home-image{
+        position: absolute;
+        width: auto;
+        height: 100%;
+        z-index: 1;
+        filter: brightness(50%);
+    }
+
+    .home-screen h1{
+        position: absolute;
+        padding: 17% 0 0 10%;
+        font-size:calc(30px + 0.5vw);
+        color: white;
+        z-index: 2;
+    }
+
+    .line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: #008AAB;
+        padding: 0 0 0 0;
+        overflow: hidden;
+    }
+
+    .line-content{
+        display: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px 15px 10px;
+    }
+
+    .line-content p{
+        color: #51B8C3;
+        font-weight: 700;
+        font-size:calc(6px + 0.5vw);
+    }
+
+    .line-content img{
+        width: 1.1%;
+        height: 1.1%;
+    }
+
+        /* --------------------------- bonificação ---------------------------*/
+
+.bonif-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bonif{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 8% 0 8% 0;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.title-container h1{
+    z-index: 1;
+    font-size:calc(30px + 0.5vw);
+    padding: 0 0 0 10px;
+    color: #18737D  ;
+    position: absolute;
+}
+
+.title-shadow{
+    z-index: 0;
+    top: 45%;
+    background-color: #51B8C3;
+    height: 8px;
+    width: 300px;
+    position: absolute;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonif-text{
+    padding: 50px;
+    width: 100%;
+}
+
+.bonif-text p{
+    font-size:calc(14px + 0.5vw);
+    color: #333333;
+}
+
+.bonif-text li{
+    font-size:calc(14px + 0.5vw);
+    color: #333333;
+}
+
+
+.bonif-text ul{
+    padding: 0 0 0 40px;
+}
+
+.li-bonif {
+    font-size:calc(12px + 0.5vw);
+    padding: 10px;
+    color: #444444;
+}
+
+.li-bonif::marker{
+    content: url(../images/bullet-point.png);
+}
+
+.bonif-image{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonif-image-img{
+    width: 90%;
+    height: auto;
+}
+
+/* --------------------------- Vantagem ---------------------------*/
+
+.vantagens-container{
+    width: 100%;
+    height: auto;
+    padding: 0 0 6% 0;
+    background-color: #008AAB;
+}
+
+.vantagens{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vantagem{
+    width: calc(100%/2);
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 0 10% 0;
+}
+
+.vantagem h1{
+    font-size:calc(12px + 0.5vw);
+}
+
+.icon-blue{
+    display: none;
+}
+
+.icon-white{
+    display: block;
+}
+
+.blue, .white {
+    background-color: #008AAB;
+    color: white;
+}
+
+.blue p{
+    background-color: #008AAB;
+    color: white;
+}
+
+.white p{
+    color: white;
+}
+
+.icon {
+    width: 15%;
+    height: 30%;
+}
+
+.top {
+    border-radius: 0px;
+}
+
+.bottom{
+    border-radius: 0px;
+}
+
+.icon-text{
+    width: 60%;
+    height: 50%;
+    font-size:calc(10px + 0.5vw);
+    text-align: center;
+}
+
+    /* --------------------------- Footer ---------------------------*/
+        
+    footer{
+        position: absolute;
+        margin-top: -40px;
+        height: auto;
+        width: 100%;
+        background-color: #0699AA;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        align-items: top;
+        justify-content: center;
+        z-index: 99;
+    }
+
+    .footer-container{
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 30px;
+        padding: 40px 0 40px 0;
+    }
+
+    .f1{
+        width: 100%;
+    }
+    .f2{
+        width: 100%;
+    }
+    .f3{
+        width: 100%;
+    }
+    .f4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer h1, h3{
+        font-size:calc(20px + 0.5vw);
+        color: white;
+    }
+
+    .f1 p{
+        color: white;
+        font-size:calc(12px + 0.5vw);
+    }
+
+    footer li, ul{
+        padding: 8px;
+        color: white;
+    }
+
+    footer h3{
+        font-size:calc(14px + 0.5vw);
+    }
+
+    footer li{
+        cursor: pointer;
+        font-size:calc(12px + 0.5vw);
+    }
+
+    footer a{
+        text-decoration: none;
+    }
+
+    footer li::marker {
+        content: "\203A"; 
+
+    }
+
+    footer li:hover{
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 20px 0 20px;
+        background: linear-gradient(to bottom, black, transparent)    ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    
+    .navbar {
+        padding-right: 0;
+        display: none;
+    }
+    
+    .logo{
+        width: 25%;
+        height: auto;
+        padding: 25px;
+        transition: .3s;
+    }
+  
+    .navbar-small {
+        display: block;
+        padding-right: 10%;
+        position: relative;
+        display: inline-block;
+    }
+  
+    .navbar-small-content{
+      display: none;
+      position: fixed;
+      top: 7%;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 138, 171, 1);
+      z-index: 1;
+    }
+  
+    .navbar-small-content a, button {
+      color: white;
+      padding: 12px 30px;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+    }
+  
+    .navbar-small-content button{
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  
+    .sub-navbar-small-content{
+      display: none;
+      top: 7%;
+      left: 0;
+      width: 100%;
+      background-color: rgb(0, 106, 133);
+      z-index: 1;
+    }
+  
+    .sub-navbar-small-content a{
+      padding: 16px 50px;
+      font-weight: 500;
+  }
+  
+    .icon-small {
+      font-size:calc(18px + 0.5vw);
+      font-weight: 600;
+      background-color: transparent;
+      border: none;
+    }
+
+    /* --------------------------- HOME ---------------------------*/
+
+    .home-screen{
+        width: 100%;
+        height: 300px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-color: #444444;
+    }
+
+    .home-image{
+        position: absolute;
+        width: auto;
+        height: 100%;
+        z-index: 1;
+        filter: brightness(50%);
+    }
+
+    .home-screen h1{
+        position: absolute;
+        padding: 40% 0 0 10%;
+        font-size:calc(30px + 0.5vw);
+        color: white;
+        z-index: 2;
+    }
+
+    .line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: #008AAB;
+        padding: 0 0 0 0;
+        overflow: hidden;
+    }
+
+    .line-content{
+        display: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px 15px 10px;
+    }
+
+    .line-content p{
+        color: #51B8C3;
+        font-weight: 700;
+        font-size:calc(4px + 0.5vw);
+    }
+
+    .line-content img{
+        width: 1.1%;
+        height: 1.1%;
+    }
+
+
+    /* --------------------------- bonificação ---------------------------*/
+
+.bonif-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bonif{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 8% 0 8% 0;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.title-container h1{
+    z-index: 1;
+    font-size:calc(20px + 0.5vw);
+    padding: 0 0 0 10px;
+    color: #18737D  ;
+    position: absolute;
+}
+
+.title-shadow{
+    z-index: 0;
+    top: 30%;
+    background-color: #51B8C3;
+    height: 8px;
+    width: 200px;
+    position: absolute;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonif-text{
+    padding: 0;
+    width: 100%;
+}
+
+.bonif-text p{
+    font-size:calc(12px + 0.5vw);
+    color: #333333;
+}
+
+.bonif-text li{
+    font-size:calc(12px + 0.5vw);
+    color: #333333;
+}
+
+
+.bonif-text ul{
+    padding: 0 0 0 40px;
+}
+
+.li-bonif {
+    font-size:calc(12px + 0.5vw);
+    padding: 10px;
+    color: #444444;
+}
+
+.li-bonif::marker{
+    content: url(../images/bullet-point.png);
+}
+
+.bonif-image{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonif-image-img{
+    width: 90%;
+    height: auto;
+}
+
+/* --------------------------- Vantagem ---------------------------*/
+
+.vantagens-container{
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+    background-color: #008AAB;
+    border-radius: 20px 20px 0 0;
+}
+
+.vantagens{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vantagem{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 0 10% 0;
+}
+
+.vantagem h1{
+    font-size:calc(12px + 0.5vw);
+}
+
+.blue, .white {
+    background-color: #008AAB;
+    color: white;
+}
+
+.blue p{
+    background-color: #008AAB;
+    color: white;
+}
+
+.white p{
+    color: white;
+}
+
+.vant-top{
+    padding: 10% 0 10% 0;
+    border-radius: 20px
+}
+
+.vant-bottom{
+    padding: 0 0 20% 0;
+}
+
+.icon {
+    width: 13%;
+    height: 25%;
+}
+
+.top {
+    border-radius: 0px;
+}
+
+.bottom{
+    border-radius: 0px;
+}
+
+.icon-text{
+    width: 45%;
+    height: 50%;
+    font-size:calc(8px + 0.5vw);
+    text-align: center;
+}
+
+    /* --------------------------- Footer ---------------------------*/
+        
+    footer{
+        position: absolute;
+        margin-top: -40px;
+        height: auto;
+        width: 100%;
+        background-color: #0699AA;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        align-items: top;
+        justify-content: center;
+        z-index: 99;
+    }
+
+    .footer-container{
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 30px;
+        padding: 40px 0 40px 0;
+    }
+
+    .f1{
+        width: 100%;
+    }
+    .f2{
+        width: 100%;
+    }
+    .f3{
+        width: 100%;
+    }
+    .f4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer h1, h3{
+        font-size: 30px;
+        color: white;
+    }
+
+    .f1 p{
+        color: white;
+        font-size: 14px;
+    }
+
+    footer li, ul{
+        padding: 8px;
+        color: white;
+    }
+
+    footer h3{
+        font-size: 16px;
+    }
+
+    footer li{
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    footer a{
+        text-decoration: none;
+    }
+
+    footer li::marker {
+        content: "\203A"; 
+
+    }
+
+    footer li:hover{
+        font-weight: 700;
+    }
+}

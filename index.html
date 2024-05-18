@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LKM</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar-container" id="navbar-container">
+        <a href="#home" class="home"><img src="/images/logotipoLKM-White.png" class= "logo" alt="logo"></a>
+        <nav class="navbar" id="nav-one">
+            <a href="#home" class="effect">Home</a>
+            <a href="#sobre" class="effect">Sobre Nós</a>
+  
+            <div class="dropdown">
+                <a href="#solucoes" class="effect-white">Soluções <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="/AppsMedida.html">Apps à Medida</a>
+                  <a href="/SiteDePedidos.html">Site de Pedidos</a>
+                  <a href="/InterfaceDosKiosks.html">Interface dos Kiosks</a>
+                  <a href="/Loyalty.html">Loyalty</a>
+                  <a href="/VouchersDesafios.html">Vouchers & Desafios</a>
+                  <a href="/BookingAll.html">Booking All</a>
+                </div>
+            </div> 
+            
+            <a href="#projetos" class="effect">Projetos</a>
+            <a href="#contactos" class="effect">Contactos</a>
+        </nav>
+  
+        <nav class="navbar-small">
+          <button onclick="openNavbar()" class="icon-small"><i class="fa-solid fa-bars" style="color: white;"></i></button>
+          <div id="navbar-small-content" class="navbar-small-content">
+            <a href="#home" class="effect">Home</a>
+            <a href="#sobre" class="effect">Sobre Nós</a>
+  
+            <button href="#" id="dropdown2" onclick="openSubNavbar()" >Soluções</button>
+              <div class="sub-navbar-small-content" id="sub-navbar-small-content">
+                <a href="/AppsMedida.html">Apps à Medida</a>
+                <a href="/SiteDePedidos.html">Site de Pedidos</a>
+                <a href="/InterfaceDosKiosks.html">Interface dos Kiosks</a>
+                <a href="/Loyalty.html">Loyalty</a>
+                <a href="/VouchersDesafios.html">Vouchers & Desafios</a>
+                <a href="/BookingAll.html">Booking All</a>
+              </div>
+  
+            <a href="#projetos" class="effect">Projetos</a>
+            <a href="#contactos" class="effect">Contactos</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="home-screen" id="home">
+        <div class="home-screen-text">
+            <h1>Mais de 20 anos a criar software de fidelização</h1>
+            <br>
+            <p>Cuidamos da experiência da sua marca em todos os seus pontos de contacto</p>
+        </div>
+
+        <div class="parcerias-container" id="clientes">
+            <div class="div-carrousel">
+                <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left" style="color: #008AAB;"></i></a>
+                        
+                <div class="Carrousel-Slide fade">
+                    <img class="child" src="/images/parcerias/client-1.png"  alt="" />
+                    <img class="child" src="/images/parcerias/client-2.png"  alt="" />
+                    <img class="child" src="/images/parcerias/client-3.png"  alt="" />
+                    <img class="child" src="/images/parcerias/client-4.png"  alt="" />
+                    <img class="child" src="/images/parcerias/client-6.png"  alt="" />
+                    <img class="child" src="/images/parcerias/client-7.png"  alt="" />
+                </div>
+            
+                <div class="Carrousel-Slide fade">
+                    <img class="child" src="/images/parcerias/client-8.png" alt="" />
+                    <img class="child" src="/images/parcerias/client-9.jpg"  alt="" />
+                    <img class="child" src="/images/parcerias/client-11.png"  alt="" />
+                    <img class="child" src="/images/parcerias/client-12.png"  alt="" />
+                    <img class="child" src="/images/parcerias/client-13.png"  alt="" />
+                    <img class="child" src="/images/parcerias/client-14.png"  alt="" />
+                </div>
+            
+                <div class="Carrousel-Slide fade">
+                    <img class="child" src="/images/parcerias/client-16.png" alt="" />
+                    <img class="child" src="/images/parcerias/client-17.jpeg" alt="" />
+                    <img class="child" src="/images/parcerias/client-18.png" alt="" />
+                    <img class="child" src="/images/parcerias/client-19.jpg" alt="" />
+                    <img class="child" src="/images/parcerias/client-21.jpg" alt="" />
+                    <img class="child" src="/images/parcerias/client-22.png" alt="" />
+                </div>
+            
+                <a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right" style="color: #008AAB;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sobre" id="sobre">
+        <div class="sobre-texto">
+            <div class="title-container">
+                <h1>SOBRE NÓS</h1>
+                <div class="title-shadow"></div>
+            </div>
+            
+            <br><br>
+            <p>A LKM existe desde 2004, e pertence ao GrupoPIE detentor do software WinRest (líder de mercado e líder tecnológico na área da restauração).</p>
+            <br>
+            <p>Com uma forte cultura de marketing relacional, olhamos de maneira integrada para cada um dos nossos clientes, oferecendo serviços e soluções personalizadas e adaptadas às necessidades do seu negócio.</p>
+            <br>
+            <p>Com uma forte cultura de marketing relacional, olhamos de maneira integrada para cada um dos nossos clientes, oferecendo serviços e soluções personalizadas e adaptadas às necessidades do seu negócio.</p>
+            <br>
+            <p>Mantemos a entidade do ponto de venda, podendo os dados serem captados com recurso:</p>
+            <br>
+            <ul>
+                <li class="li-sobre">Terminal de pagamento</li>
+                <li class="li-sobre">Software de FrontOffice</li>
+                <li class="li-sobre">Aplicação Web</li>
+                <li class="li-sobre">Solução à medida</li>
+            </ul>
+        </div>
+
+        <div class="sobre-image">
+            <img src="/images/sobre-image.jpg" class="sobre-imagem-img">
+        </div>
+    </div>
+
+    <div class="solucoes-container" id="solucoes">
+        <div class="solucoes-texto-1">
+            <h1>AS NOSSAS SOLUÇÕES</h1>
+            <br>
+            <p>A LKM dispõe de soluções para programas de loyalty de elevada complexidade operacional.</p>
+        </div>
+
+        <div class="solucoes-texto-2">
+            <div class="solucao-texto-2-div">
+                <div class="solucao-image">
+                    <img src="images/Icons/Apps à Medida.png" class="solucao-image-img">
+                </div>
+                <div class="solucao-texto-2-div-inside">
+                    <h3>Apps à medida</h3>
+                    <br>
+                    <p>Plataforma para apps móveis com integração ao ponto de venda, proporcionando interação com o consumidor durante e após a compra.</p>
+                    <br>
+                    <p class="saber-mais"><a href="/AppsMedida.html">Saber mais &nbsp;&nbsp;<i class="fa fa-angle-right" style="font-size: calc(12px + 0.5vw); font-weight: 700;"></i></a></p>
+                </div>
+            </div>
+
+            <div class="solucao-texto-2-div">
+                <div class="solucao-image">
+                    <img src="images/Icons/Site de Pedidos.png" class="solucao-image-img">
+                </div>
+                <div class="solucao-texto-2-div-inside">
+                    <h3>Site de Pedidos</h3>
+                    <br>
+                    <p>Solução integrada de browser e Ponto de Venda, oferecendo novos canais de vendas, pedidos e pagamentos, além de fidelização.</p>
+                    <br>
+                    <p class="saber-mais"><a href="/SiteDePedidos.html">Saber mais &nbsp;&nbsp;<i class="fa fa-angle-right" style="font-size:18px; font-weight: 700;"></i></a></p>
+                </div>
+            </div>
+
+            <div class="solucao-texto-2-div">
+                <div class="solucao-image">
+                    <img src="images/Icons/Interface dos Kiosks.png" class="solucao-image-img">
+                </div>
+                <div class="solucao-texto-2-div-inside">
+                    <h3>Interface dos Kiosks de Pedidos</h3>
+                    <br>
+                    <p>Solução personalizada de kiosk's digitais para lojas, reduzindo filas, integrando sistemas, incentivando consumo e permitindo diversos métodos de pagamento modernos.</p>
+                    <br>
+                    <p class="saber-mais"><a href="/InterfaceDosKiosks.html">Saber mais &nbsp;&nbsp;<i class="fa fa-angle-right" style="font-size:18px; font-weight: 700;"></i></a></p>
+                </div>
+            </div>
+
+            <div class="solucao-texto-2-div">
+                <div class="solucao-image">
+                    <img src="images/Icons/Loyalty.png" class="solucao-image-img">
+                </div>
+                <div class="solucao-texto-2-div-inside">
+                    <h3>Loyalty</h3>
+                    <br>
+                    <p>Programas fidelização com pontos, descontos, vales, cartões empresa, campanhas e jogos de prêmios.</p>
+                    <br>
+                    <p class="saber-mais"><a href="/Loyalty.html">Saber mais &nbsp;&nbsp;<i class="fa fa-angle-right" style="font-size:18px; font-weight: 700;"></i></a></p>
+                </div>
+            </div>
+
+            <div class="solucao-texto-2-div">
+                <div class="solucao-image">
+                    <img src="images/Icons/Vouchers.png" class="solucao-image-img">
+                </div>
+                <div class="solucao-texto-2-div-inside">
+                    <h3>Vouchers & Desafios</h3>
+                    <br>
+                    <p>Plataforma para promoções com vouchers de desconto, integrável ao software PIE Winrest ou PingWin, com flexibilidade em regras.</p>
+                    <br>
+                    <p class="saber-mais"><a href="/VouchersDesafios.html">Saber mais &nbsp;&nbsp;<i class="fa fa-angle-right" style="font-size:18px; font-weight: 700;"></i></a></p>
+                </div>
+            </div>
+
+            <div class="solucao-texto-2-div">
+                <div class="solucao-image">
+                    <img src="images/Icons/Booking All.png" class="solucao-image-img">
+                </div>
+                <div class="solucao-texto-2-div-inside">
+                    <h3>Booking All</h3>
+                    <br>
+                    <p>Solução integrada para delivery e gestão de entregas, automatizando pedidos de múltiplas plataformas e otimizando operações de entrega.</p>
+                    <br>
+                    <p class="saber-mais"><a href="/BookingAll.html">Saber mais &nbsp;&nbsp;<i class="fa fa-angle-right" style="font-size:18px; font-weight: 700;"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-container" id="projetos">
+        <div class="slider-container-top">
+            <div class="slider-container-text">
+                <div class="title-container">
+                    <h1>PORTFÓLIO</h1>
+                    <div class="title-shadow"></div>
+                </div>
+                <br>
+                <p>ALGUNS DOS NOSSOS PROJETOS</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="images/projetos/Portfolio-01.png" alt="img" draggable="false">
+              <img src="images/projetos/Portfolio-02.png" alt="img" draggable="false">
+              <img src="images/projetos/Portfolio-03.png" alt="img" draggable="false">
+              <img src="images/projetos/Portfolio-04.png" alt="img" draggable="false">
+              <img src="images/projetos/Portfolio-05.png" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/xvFZjo5PgG0?si=UQM4_KIAcsuwm_j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <footer id="contactos">
+        <div class="footer-container">
+            <div class="footer f1">
+                <h1>LKM</h1>
+                <p>Rua das Marinhas do Tejo, nº121</p>
+                <p>2690-370 Santa Iria de Azóia</p>
+                <br><br><br>
+                <p><b>Telm:</b> +351 963 239 239</p>
+                <br>
+                <p><b>Email:</b> geral.lkm@grupopie.com</p>
+            </div>
+
+            <div class="footer f2">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#clientes"><li>Clientes</li></a>
+                    <a href="#sobre"><li>Sobre Nós</li></a>
+                    <a href="#solucoes"><li>Produtos</li></a>
+                    <a href="#portfolio"><li>Portfólio</li></a>
+                </ul>
+            </div>
+
+            <div class="footer f3">
+                <h3>As nossas soluções</h3>
+                <ul>
+                    <a href="/AppsMedida.html"><li>Apps à medida</li></a>
+                    <a href="/Loyalty.html"><li>Loyalty</li></a>
+                    <a href="/VouchersDesafios.html"><li>Vouchers & Desafios</li></a>
+                    <a href="/SiteDePedidos.html"><li>Site de Pedidos</li></a>
+                    <a href="/InterfaceDosKiosks.html"><li>Interface dos Kiosks de Pedidos</li></a>
+                    <a href="/BookingAll.html"><li>Booking All</li></a>
+                </ul>
+            </div>
+
+            <div class="footer f4">
+                <a href="#" class="fa-brands fa-facebook" style="color: white; border-radius: 50%; text-decoration: none; font-size: 40px;"></a>
+                <br>
+                <a href="#" class="fa-brands fa-linkedin" style="color: white; border-radius: 50%; text-decoration: none; font-size: 40px;"></a>
+            </div>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LKM</title>
+    <link rel="stylesheet" href="css/VouchersDesafios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="/js/menu.js" defer></script>
+</head>
+<body>
+    <header class="navbar-container" id="navbar-container">
+        <a href="index.html#home" class="home"><img src="/images/logotipoLKM-White.png" class= "logo" alt="logo"></a>
+        <nav class="navbar" id="nav-one">
+            <a href="/index.html#home" class="effect">Home</a>
+            <a href="/index.html#sobre" class="effect">Sobre Nós</a>
+  
+            <div class="dropdown">
+                <a href="/index.html#solucoes" class="effect-white">Soluções <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="/AppsMedida.html">Apps à Medida</a>
+                  <a href="/SiteDePedidos.html">Site de Pedidos</a>
+                  <a href="/InterfaceDosKiosks.html">Interface dos Kiosks</a>
+                  <a href="/Loyalty.html">Loyalty</a>
+                  <a href="/VouchersDesafios.html">Vouchers & Desafios</a>
+                  <a href="/BookingAll.html">Booking All</a>
+                </div>
+            </div> 
+            
+            <a href="/index.html#projetos" class="effect">Projetos</a>
+            <a href="/index.html#contactos" class="effect">Contactos</a>
+        </nav>
+  
+        <nav class="navbar-small">
+          <button onclick="openNavbar()" class="icon-small"><i class="fa-solid fa-bars" style="color: white;"></i></button>
+          <div id="navbar-small-content" class="navbar-small-content">
+            <a href="/index.html#home" class="effect">Home</a>
+            <a href="/index.html#sobre" class="effect">Sobre Nós</a>
+  
+            <button href="#" id="dropdown2" onclick="openSubNavbar()" >Soluções</button>
+              <div class="sub-navbar-small-content" id="sub-navbar-small-content">
+                <a href="/AppsMedida.html">Apps à Medida</a>
+                <a href="/SiteDePedidos.html">Site de Pedidos</a>
+                <a href="/InterfaceDosKiosks.html">Interface dos Kiosks</a>
+                <a href="/Loyalty.html">Loyalty</a>
+                <a href="/VouchersDesafios.html">Vouchers & Desafios</a>
+                <a href="/BookingAll.html">Booking All</a>
+              </div>
+  
+            <a href="/index.html#projetos" class="effect">Projetos</a>
+            <a href="/index.html#contactos" class="effect">Contactos</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="home-screen">
+        <h1>VOUCHERS & DESAFIOS</h1>
+        <img class="home-image" src="/images/Home/voucher.jpg">
+    </div>
+
+    <div class="line">
+        <div class="line-content">
+            <p>LOYALTY</p>
+            <img src="/images/bullet-point-blue.png">
+            <p>LOYALTY</p>
+            <img src="/images/bullet-point-blue.png">
+            <p>LOYALTY</p>
+            <img src="/images/bullet-point-blue.png">
+            <p>LOYALTY</p>
+        </div>
+    </div>
+
+    <div class="plataforma-container">
+        <div class="plataforma">
+            <div class="title-container">
+                <h1>PLATAFORMA MYCLIENT</h1>
+                <div class="title-shadow"></div>
+            </div>
+            <div class="information">
+                <p>A plataforma MyClient permite a implementação de um sistema avançado de promoções sobre emissão de vouchers de desconto. A emissão destes vouchers pode ser prévia ou na venda no caso de integração com o software PIE Winrest ou PingWin.</p>
+                <br>
+                <p>A solução permite diversas regras e condições tanto de emissão como de resgate.</p>
+                <br>
+                <p>O MyClient permite criar programas de fidelização com esquemas de:</p>
+                <br>
+                <ul>
+                    <li class="li-plataforma">Bonificação com Pontos;</li>
+                    <li class="li-plataforma">Descontos Imediatos;</li>
+                    <li class="li-plataforma">Vales de Desconto;</li>
+                    <li class="li-plataforma">Cartões Empresa <i>(pré-pagos ou pós-pagos)</i>;</li>
+                    <li class="li-plataforma">Campanhas Programadas;</li>
+                    <li class="li-plataforma">Jogos de Prémios.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="internos-container">
+        <div class="internos">
+            <div class="internos-image">
+                <img src="/images/Home/voucher-interno.png" class="internos-imagem-img">
+            </div>
+            <div class="internos-texto">
+                <div class="title-container2">
+                    <h1>VOUCHERS INTERNOS</h1>
+                    <div class="title-shadow2"></div>
+                </div>
+                <br>
+                <h3 class="subtitle">PRÉ-EMITIDOS E REDIMIDOS VIA POS OU WEB</h3>
+                <br><br>
+                <p>Sobre software WinRest ou PingWin são definidas as condições de emissão e remissão. Na compra é emitido automaticamente o voucher em papel.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="externos-container">
+        <div class="externos">
+            <div class="externos-texto">
+                <div class="title-container1">
+                    <h1>VOUCHERS EXTERNOS</h1>
+                    <div class="title-shadow2"></div>
+                </div>
+                <br>
+                <h3 class="subtitle">PRÉ-EMITIDOS E REDIMIDOS VIA POS OU WEB</h3>
+                <br><br>
+                <p>Os vouchers externos são pré-emitidos na plataforma, gerando um ID, que poderá ser distribuído em diferentes formatos e de diversas formas.</p>
+                <br>
+            </div>
+            <div class="externos-image">
+                <img src="/images/Home/voucher-externo.png" class="externos-imagem-img">
+            </div>
+        </div>
+        
+    </div>
+
+    <footer id="contactos">
+        <div class="footer-container">
+            <div class="footer f1">
+                <h1>LKM</h1>
+                <p>Rua das Marinhas do Tejo, nº121</p>
+                <p>2690-370 Santa Iria de Azóia</p>
+                <br><br><br>
+                <p><b>Telm:</b> +351 963 239 239</p>
+                <br>
+                <p><b>Email:</b> geral.lkm@grupopie.com</p>
+            </div>
+
+            <div class="footer f2">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <a href="index.html#home"><li>Home</li></a>
+                    <a href="index.html#clientes"><li>Clientes</li></a>
+                    <a href="index.html#sobre"><li>Sobre Nós</li></a>
+                    <a href="index.html#solucoes"><li>Produtos</li></a>
+                    <a href="index.html#portfolio"><li>Portfólio</li></a>
+                </ul>
+            </div>
+
+            <div class="footer f3">
+                <h3>As nossas soluções</h3>
+                <ul>
+                    <a href="/AppsMedida.html"><li>Apps à medida</li></a>
+                    <a href="/Loyalty.html"><li>Loyalty</li></a>
+                    <a href="/VouchersDesafios.html"><li>Vouchers & Desafios</li></a>
+                    <a href="/SiteDePedidos.html"><li>Site de Pedidos</li></a>
+                    <a href="/InterfaceDosKiosks.html"><li>Interface dos Kiosks de Pedidos</li></a>
+                    <a href="/BookingAll.html"><li>Booking All</li></a>
+                </ul>
+            </div>
+
+            <div class="footer f4">
+                <a href="#" class="fa-brands fa-facebook" style="color: white; border-radius: 50%; text-decoration: none; font-size: 40px;"></a>
+                <br>
+                <a href="#" class="fa-brands fa-linkedin" style="color: white; border-radius: 50%; text-decoration: none; font-size: 40px;"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
